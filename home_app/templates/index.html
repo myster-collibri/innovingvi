@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+    
+
+{% block title %}
+<title>Innovazing|Home</title>
+{% endblock %}
+{% block content %}
+    <!-- slider_area_start -->
+    {% include '_slider.html' %}
+    <!-- slider_area_end -->
+
+    <!-- what_we_do_area_start -->
+    {% include '_whatwdo.html' %}
+    <!-- service_area_end -->
+
+    <!-- about_info_area start  -->
+    {% include '_about.html' %}
+    <!-- /about_info_area end  -->
+
+    <!-- counter_area  -->
+    {% include '_counter.html' %}
+    <!-- /counter_area  -->
+
+    <!-- case_study_area  -->
+    {% include '_castudy.html' %}
+    <!-- /case_study_area  -->
+
+    <!-- accordion  -->
+    {% include '_ask.html' %}
+    <!-- accordion  -->
+
+    <!--testimonial-->
+    
+    <!--testimonial-->
+
+
+    <!-- team_area  -->
+    {% include '_team.html' %}
+    <!-- /team_area  -->
+    <!--freecote-->
+    {% include '_freecote.html' %}
+    <!--/freecote-->
+
+    <!-- Information_area  -->
+    {% include '_moreinfo.html' %}
+    <!-- /Information_area  end -->
+
+    <!-- footer start -->
+    {% include '_footer.html' %}
+    <!--/ footer end  -->
+    
+    <!-- link that opens popup -->
+    {% endblock %}
+
+    {% block scripts %}
+    <script>
+        $(document).ready(function(e) {
+            $('.lngchange').click(fonction())
+                e.preventDefault();
+                var ck = Cookies.get('language');
+                var val = $(this).attr('val');
+                if (val != ck) {
+                    Cookies.set('language', val);
+                    window.location.reload(true);
+                    }
+                    })
+    </script>
+
+    {% endblock%}

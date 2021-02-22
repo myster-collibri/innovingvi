@@ -1,0 +1,36 @@
+<nav>
+    <!--en ventes, promotion et promotion,inscription,formation,services-->
+    <ul id="navigation">
+        <li><a href="{% url 'home' %}">Accueil</a></li>
+        <li><a href="#">Innovazingvi<i class="ti-angle-down"></i></a>
+            <ul class="submenu">
+                    <li><a href="{% url 'about' %}">Apropos de nous</a></li>
+                    <li><a href="{% url 'formation' %}">Nos programmes</a></li>   
+            </ul>
+        </li>
+        <li><a href="{% url 'services' %}">Produits et Services</a></li>
+        <li><a href="#">Publications<i class="ti-angle-down"></i></a>
+            <ul class="submenu">
+                    <li><a href="{% url 'gallery' %}">Gallerie photo</a></li>
+                    <li><a href="{% url 'videos' %}">Courte Videos</a></li>
+                    <li><a href="{% url 'news' %}">Article publier</a></li>
+                    <li><a href="{% url 'document' %}">Documents</a></li>   
+            </ul>
+        </li>
+        
+        
+        <li><a href="{% url 'project' %}">Projects</a></li>
+
+
+        
+        <!--<li><a href="services.html">En ventes</a></li>
+        <li><a href="study.html">Formation</a></li>
+        <li><a href="#">Services <i class="ti-angle-down"></i></a>
+            <ul class="submenu">
+                <li><a href="blog.html">Services</a></li>
+                <li><a href="single-blog.html">single-blog</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Inscription</a></li>
+    </ul>
+</nav>

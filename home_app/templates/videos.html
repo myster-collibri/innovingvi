@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+    
+
+{% block title %}
+<title>Extrait videos</title>
+{% endblock %}
+{% block content %}
+
+<div class="slider_area">
+    <div class="slider_active owl-carousel">
+        <div class="single_slider  d-flex align-items-center header_bg_2 overlay2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider_text ">
+                            <h3>Courte Videos<br/>
+                            de nos activtes</bf></h3>
+                            <p>videos de projects, videos de nos formations,videos des evenements</p>
+                        </div>
+
+
+                            <!--<div class="video_service_btn">
+                                <a href="#" class="boxed-btn3">promotion des produits <span class="fa fa-arrow-circle-right"></span></a>
+                            </div>-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+       
+    </div>
+</div>
+
+<div class="row mt-30">
+    <div class="col-2">
+        
+    </div>
+    
+
+
+    <div class="col-12 col-xl-8 col-md-12">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bOkIsEymTtY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+    </div>
+    
+    
+      
+      
+
+</div>
+    
+
+
+
+    <!-- footer start -->
+    {% include '_footer.html' %}
+    <!--/ footer end  -->
+    
+    <!-- link that opens popup -->
+    {% endblock %}
+    {% block scripts %}
+    <script>
+        $('.carousel-3d-controls').mdbCarousel3d();
+    </script>
+    {% endblock %}
